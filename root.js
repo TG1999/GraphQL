@@ -1,0 +1,28 @@
+users=[]
+root={
+    item:()=>{
+        return{
+        name:'ABC',
+        time:'12:32:11'
+        }   
+    },
+    user:()=>{
+        return{
+            firstName:'Tushar',
+            lastName:'Goel',
+            emails:[{
+                email:'tush@goel.com'
+            },
+            {
+                email:'tush@goel2.com'
+            }]
+        }
+    },
+    createUser:({input})=>{
+        users.push(input)
+        return input
+    }
+}
+module.exports={
+    root
+}
